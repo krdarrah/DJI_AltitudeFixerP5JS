@@ -41,7 +41,7 @@ function fixFiles() {
   for (let i=0; i<numberOfFiles; i++) {
     //rawData = loadStrings(files[i].data);
     var index = 0;
-    while (index < rawData.length) {
+    while (index < rawData[i].length) {
       let indexForAltitude = rawData[i][index].indexOf(altKeyWord);
       if (indexForAltitude >= 0) {
         let altitudeString = rawData[i][index].substring(indexForAltitude+altKeyLength, indexForAltitude+altKeyLength+9);
